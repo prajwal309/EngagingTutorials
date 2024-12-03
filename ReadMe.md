@@ -38,17 +38,27 @@ python your_program.py
 
 To use our dedicated nodes use: #SBATCH -p pi_seager
 
-example1 contains a simple case of matrix inversion, which submits multiple nodes. 
+example1 contains a simple case of matrix inversion, which submits multiple nodes. This code is not optimized for using multiple cores. TO run the code go to clone this repository, go to the folder example1, and launch the Launcher.py which should submit 10 jobs:
+
+```
+git clone https://github.com/prajwal309/EngagingTutorials
+cd EngagingTutorials
+cd example1
+python Launcher.py
+```
 
 ## Specs
 
 The storage available is 1 TB, which is larger than MIT supercloud (500 GB), hence is suitable for more storage required calculations.
-The p 
+
+
+
 
 ## Differences between MIT Supercloud and Engaging
 
 - Only SLURM commands are available.
 - Modes such as TripleMode are not available. TripleMode is great way for submitting 1000s of jobs, which handles queuing well. Similarly, command such as LLstat are not available.
+- To see 
 - If you don't specify the node, your job is submitted to mit_quicktest node, which has limitation of 15 minutes. On Pi_seager it is currently set at 5 days. 
 
 
