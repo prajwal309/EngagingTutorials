@@ -47,8 +47,17 @@ cd example1
 python Launcher.py
 ```
 
-Now to see your jobs
+Now to see if your jobs have been properly submitted:
 
+>>> squeue -u username
+
+To kill the jobs:
+
+>>> scancel -u username
+
+To find the time limit and the nodes available: 
+
+>>> sinfo
 
 
 ## Specs
