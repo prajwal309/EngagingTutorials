@@ -21,11 +21,17 @@ if __name__ == "__main__":
         print("Usage: python myCode.py <matrix_size>")
     else:
 
-        startTime = time.time()
-        try:
-            size = int(sys.argv[1])
-            invert_matrix(size)
-        except ValueError:
-            print("Please provide a valid integer for matrix size.")
-        endTime = time.time()
-        print("Matrix Size: ", size, " Execution time: ", endTime - startTime, " seconds.")
+        AllTime = []
+        for i in range(1000):
+            try:
+                startTime = time.time()
+                size = int(sys.argv[1])
+                invert_matrix(size)
+                endTime = time.time()
+                AllTime.append(endTime - startTime)
+            except ValueError:
+                print("Please provide a valid integer for matrix size.")
+        AllTime = np.array(AllTime)
+        MeanTime = round(np.mean(AllTime),4) 
+        STDTime = round(np.std(AllTime), 4)
+        print("Matrix Size: ", size, " Execution time: ", MeanTime, " pm ", STDTime, " seconds.")

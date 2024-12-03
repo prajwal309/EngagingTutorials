@@ -28,7 +28,7 @@ Following is an example of script for submitting a job to
 #SBATCH --ntasks=1
 #SBATCH -p mit_normal
 #SBATCH --cpus-per-task=4
-#SBATCH --mem=4G
+#SBATCH --mem=16G
 #SBATCH -o Run_%j.log
 source /etc/profile
 module load anaconda3/2023.07
@@ -46,6 +46,7 @@ cd EngagingTutorials
 cd example1
 python Launcher.py
 ```
+
 
 ## Specs
 
