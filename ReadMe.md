@@ -135,6 +135,13 @@ Caches (sum of all):
 
 ---
 
+
+## Storage
+The home directory typically allows for storage of 100 GB (old accounts) or 200 GB (new accounts). You should have access to either for 1 TB 
+- /home/<username>/orcd/pool
+ or 
+- /pool001/<username>
+
 ## Differences between MIT Supercloud and Engaging
 
 ### 1. Scheduling System:
