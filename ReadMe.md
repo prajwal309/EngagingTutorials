@@ -73,9 +73,6 @@ To find the time limit and the nodes available:
 
 
 ## System Specs
-
-The storage available is 1 TB, which is larger than MIT supercloud (500 GB), hence for impression wise, Engaging seems to be more suitable for jobs requiring storage required calculations.
-
 As for the nodes itself, here are the specs (use lscpu to find after sshing into the node where you have the job):
 
 **Engaging (pi_seager Nodes)**
@@ -138,9 +135,11 @@ Caches (sum of all):
 
 ## Storage
 The home directory typically allows for storage of 100 GB (old accounts) or 200 GB (new accounts). You should have access to either for 1 TB 
-- /home/<username>/orcd/pool
+- /home/<username>/orcd/pool [New Accounts]
  or 
-- /pool001/<username>
+- /pool001/<username> [Old Accounts]
+
+[Learn more about storage and file systems here.](https://orcd-docs.mit.edu/filesystems-file-transfer/filesystems/#__tabbed_1_1)
 
 ## Differences between MIT Supercloud and Engaging
 
